@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Contact form</title>
+  <link rel="stylesheet" href="./main.css">
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="card">
+    <h1>Contact Form</h1>
+    <form 
+     action="https://formspree.io/f/mdkzzbga"
+    method="POST">
+      <label for="firstname">First Name </label>
+      <input type="text" id="firstname" name="firstname"  onclick="firstname">
+      <br>
+      <br>
+      <label for="lastname">Last Name </label>
+      <input type="text" id="lastname" name="lastname" required>
+      <br>
+      <br>
+      <label for="email">Email Address </label>
+      <input type="email" id="email" name="email" required>
+<br>
+<br>
+      <label for="message">Message</label>
+      <textarea rows="4" id="Message"></textarea>
+      
+      <label for="query">Query Type *</label>
+      <select id="query" name="query" required>
+        <option value="">Select your query</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        
+        <input type="submit"  onclick="Contact(event)"> 
+      </div>
+      
+    </form>
+    </script>
+    </body>
+    <script src="script.js"></script>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Akinloye3264">Akinloye3264</a>.
+  </div>
+</html>

@@ -6,10 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <title>Contact form</title>
+  <title>Hire Form</title>
   <link rel="stylesheet" href="./main.css">
   
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -20,43 +20,38 @@
 
 <div class="container">
   <div class="card">
-    <h1>Contact Form</h1>
+    <h1>HIRE ME</h1>
     <form 
      action="https://formspree.io/f/mdkzzbga"
     method="POST">
-      <label for="firstname">First Name </label>
+      <label for="firstname">Company Name </label>
       <input type="text" id="firstname" name="firstname"  onclick="firstname">
       <br>
       <br>
-      <label for="lastname">Last Name </label>
-      <input type="text" id="lastname" name="lastname" required>
-      <br>
-      <br>
+     
       <label for="email">Email Address </label>
       <input type="email" id="email" name="email" required>
 <br>
 <br>
       <label for="message">Message</label>
-      <textarea rows="4" id="Message"></textarea>
+      <textarea rows="6" id="Message"></textarea>
       
-      <label for="query">Query Type *</label>
-      <select id="query" name="query" required>
-        <option value="">Select your query</option>
-        <option value="general">General Inquiry</option>
-        <option value="support">Support</option>
-        <option value="feedback">Feedback</option>
-        
-        <input type="submit"  onclick="Contact(event)"> 
-      </div>
+      
+      <input type="submit"> 
+    </div>
+    <div class="Resume">
+  <a href="Akinloye_Emmanuel_cv.docx - Google Docs.pdf" download class="btn">Download  Resume</a>
+  <br>
+  <br>
+  <a href="Akinloye_Emmanuel_cv.docx - Google Docs.pdf" target="_blank" class="btn">View Resume</a>
+    </div>
       
     </form>
     </script>
     </body>
-    <script src="script.js"></script>
   </div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Akinloye3264">Akinloye3264</a>.
   </div>
 </html>
